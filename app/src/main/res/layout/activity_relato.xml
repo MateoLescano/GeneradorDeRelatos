@@ -15,27 +15,27 @@
         android:fontFamily="@font/milmedium"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/tvMomentoGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvMomentoGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Momento"
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/tvUbicacionGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvUbicacionGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ubicacion"
@@ -45,7 +45,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMomentoGenerado" />
 
     <TextView
         android:id="@+id/textView4"
@@ -58,7 +58,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUbicacionGenerado" />
 
     <TextView
         android:id="@+id/textView5"
