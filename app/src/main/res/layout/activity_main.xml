@@ -7,163 +7,163 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenide"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/tvFantasia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:text="Realismo o fantasia"
+        app:layout_constraintBottom_toTopOf="@+id/tvMomento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fantasia o no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFantasia" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvMomento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:text="Momento"
+        app:layout_constraintBottom_toTopOf="@+id/tvUbicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFantasia" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/switchMomento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Momento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMomento" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvUbicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:text="Ubicacion"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMomento" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/switchUbicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ubicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUbicacion" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvPersonaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        android:text="Personaje"
+        app:layout_constraintBottom_toTopOf="@+id/tvAccion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUbicacion" />
 
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/switchPersonaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Personaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPersonaje" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvAccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        android:text="Accion"
+        app:layout_constraintBottom_toTopOf="@+id/tvObjeto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPersonaje" />
 
     <Switch
-        android:id="@+id/switch5"
+        android:id="@+id/switchAccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAccion" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvObjeto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        android:text="Objeto"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetalle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAccion" />
 
     <Switch
-        android:id="@+id/switch6"
+        android:id="@+id/switchObjeto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Objeto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/tvObjeto" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:text="Detalle"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/tvObjeto" />
 
     <Switch
-        android:id="@+id/switch7"
+        android:id="@+id/switchDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Detalle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalle" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnGenerar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Generar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
