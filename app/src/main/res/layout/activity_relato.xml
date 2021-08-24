@@ -8,7 +8,7 @@
     tools:context=".RelatoActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tu relato:"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tvUbicacionGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvGenerado" />
 
     <TextView
         android:id="@+id/tvUbicacionGenerado"
@@ -42,52 +42,52 @@
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonajeGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMomentoGenerado" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvPersonajeGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Personaje"
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toTopOf="@+id/tvAccionGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUbicacionGenerado" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvAccionGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accion"
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/tvObjetoGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPersonajeGenerado" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvObjetoGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Objeto"
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetalleGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAccionGenerado" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvDetalleGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Detalle"
@@ -97,5 +97,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/tvObjetoGenerado" />
 </androidx.constraintlayout.widget.ConstraintLayout>
