@@ -12,12 +12,14 @@
         android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenide"
         android:fontFamily="@font/milmedium"
+        android:text="Bienvenide! Elegí las consignas de tu relato"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/tvFantasia"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,14 +27,13 @@
         android:id="@+id/tvFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Las consignas pueden tener cierto realismo tratando de mantener la verosimilitud o completa libertad de fantasear"
         android:fontFamily="@font/milmedium"
+        android:gravity="center"
+        android:text="Las consignas pueden tener cierto realismo tratando de mantener la verosimilitud o completa libertad de fantasear"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvMomento"
+        app:layout_constraintBottom_toTopOf="@+id/switchFantasia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHome" />
 
@@ -40,24 +41,11 @@
         android:id="@+id/switchFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Realismo"
         android:fontFamily="@font/millight"
+        android:text="Realismo"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFantasia" />
-
-    <TextView
-        android:id="@+id/tvMomento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Momento histórico: un espacio temporal donde transcurre el relato"
-        android:fontFamily="@font/milmedium"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvUbicacion"
+        app:layout_constraintBottom_toTopOf="@+id/switchMomento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,128 +55,82 @@
         android:id="@+id/switchMomento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Momento"
-        android:fontFamily="@font/millight"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMomento" />
-
-    <TextView
-        android:id="@+id/tvUbicacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ubicación: un espacio físco"
-        android:gravity="center"
         android:fontFamily="@font/milmedium"
+        android:text="Momento histórico: un espacio temporal, real o ficticio, donde transcurre el relato"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvPersonaje"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/switchUbicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMomento" />
+        app:layout_constraintTop_toBottomOf="@+id/switchFantasia" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchUbicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubicacion"
-        android:fontFamily="@font/millight"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUbicacion" />
-
-    <TextView
-        android:id="@+id/tvPersonaje"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Personaje: Puede ser real, ficticio o simplemente una característica del mismo"
-        android:gravity="center"
         android:fontFamily="@font/milmedium"
+        android:text="Ubicación: un espacio físco, real o ficticio"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvAccion"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/switchPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUbicacion" />
+        app:layout_constraintTop_toBottomOf="@+id/switchMomento" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchPersonaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Personaje"
-        android:fontFamily="@font/millight"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPersonaje" />
-
-    <TextView
-        android:id="@+id/tvAccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Acción: un cambio que forma parte de los acontecimientos de la trama"
         android:fontFamily="@font/milmedium"
+        android:text="Personaje: Puede ser real, ficticio o simplemente una característica del mismo"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvObjeto"
+        app:layout_constraintBottom_toTopOf="@+id/switchAccion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPersonaje" />
+        app:layout_constraintTop_toBottomOf="@+id/switchUbicacion" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchAccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accion"
-        android:fontFamily="@font/millight"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAccion" />
-
-    <TextView
-        android:id="@+id/tvObjeto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Objeto: elemento que forma parte de la trama"
         android:fontFamily="@font/milmedium"
+        android:text="Acción: un cambio que forma parte de los acontecimientos de la trama"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvDetalle"
+        app:layout_constraintBottom_toTopOf="@+id/switchObjeto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAccion" />
+        app:layout_constraintTop_toBottomOf="@+id/switchPersonaje" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchObjeto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto"
-        android:fontFamily="@font/millight"
+        android:fontFamily="@font/milmedium"
+        android:text="Objeto: elemento que forma parte de la trama"
         android:textColor="@color/black"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchDetalle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvObjeto" />
+        app:layout_constraintTop_toBottomOf="@+id/switchAccion" />
 
-    <TextView
-        android:id="@+id/tvDetalle"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalle: Una condición que debe aparecer durante el relato; un comodín de libre interpretación para hacer la trama más interesante"
         android:fontFamily="@font/milmedium"
+        android:text="Detalle: Una condición que debe aparecer durante el relato (o en como está escrito), un comodín de libre interpretación que creas que puede hacer la trama más interesante"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:gravity="center"
@@ -196,30 +138,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvObjeto" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchDetalle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Detalle"
-        android:fontFamily="@font/millight"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/switchObjeto" />
 
     <Button
         android:id="@+id/btnGenerar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Generar"
         android:fontFamily="@font/milmedium"
+        android:text="Generar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/switchDetalle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
