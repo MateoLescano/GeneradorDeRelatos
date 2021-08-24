@@ -3,8 +3,8 @@ package com.citesoftware.generadorderelatos
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View.GONE
-import android.widget.Button
 import android.widget.TextView
+import kotlin.random.Random
 
 class RelatoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,7 @@ class RelatoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_relato)
 
         if(intent.getBooleanExtra("Momento", false)){
-            findViewById<TextView>(R.id.tvMomentoGenerado).text = "Si pa"
+            findViewById<TextView>(R.id.tvMomentoGenerado).text = generarMomento()
         }else{
             findViewById<TextView>(R.id.tvMomentoGenerado).visibility = GONE
         }
@@ -47,4 +47,14 @@ class RelatoActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvDetalleGenerado).visibility = GONE
         }
     }
+
+    fun generarMomento(): String {
+
+        val momentosTodos = listOf("a", "b", "c", "d")
+
+        val randint = Random.nextInt(momentosTodos.size)
+
+        return momentosTodos[randint]
+    }
+
 }

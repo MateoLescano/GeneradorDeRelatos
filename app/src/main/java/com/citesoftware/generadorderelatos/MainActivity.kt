@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Switch
 import android.widget.Toast
+import androidx.appcompat.widget.SwitchCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,13 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnGenerar).setOnClickListener {
 
-            val RoF = findViewById<Switch>(R.id.switchFantasia).isChecked
-            val Momento = findViewById<Switch>(R.id.switchMomento).isChecked
-            val Ubicacion = findViewById<Switch>(R.id.switchUbicacion).isChecked
-            val Personaje = findViewById<Switch>(R.id.switchPersonaje).isChecked
-            val Accion = findViewById<Switch>(R.id.switchAccion).isChecked
-            val Objeto = findViewById<Switch>(R.id.switchObjeto).isChecked
-            val Detalle = findViewById<Switch>(R.id.switchDetalle).isChecked
+            val RoF = findViewById<SwitchCompat>(R.id.switchFantasia).isChecked
+            val Momento = findViewById<SwitchCompat>(R.id.switchMomento).isChecked
+            val Ubicacion = findViewById<SwitchCompat>(R.id.switchUbicacion).isChecked
+            val Personaje = findViewById<SwitchCompat>(R.id.switchPersonaje).isChecked
+            val Accion = findViewById<SwitchCompat>(R.id.switchAccion).isChecked
+            val Objeto = findViewById<SwitchCompat>(R.id.switchObjeto).isChecked
+            val Detalle = findViewById<SwitchCompat>(R.id.switchDetalle).isChecked
 
 
 
@@ -38,7 +39,13 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Objeto", Objeto)
             intent.putExtra("Detalle", Detalle)
 
-            this.startActivity(intent)
+            if(Momento || Ubicacion || Personaje || Accion || Objeto || Detalle){
+                this.startActivity(intent)
+            }else{
+                Toast.makeText(this,"Por favor, elija al menos una consigna",Toast.LENGTH_LONG).show()
+            }
+
+
         }
 
     }
