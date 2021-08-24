@@ -38,7 +38,7 @@
         android:id="@+id/switchFantasia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fantasia o no"
+        android:text="Realismo"
         android:fontFamily="@font/millight"
         android:textColor="@color/black"
         android:textSize="14sp"

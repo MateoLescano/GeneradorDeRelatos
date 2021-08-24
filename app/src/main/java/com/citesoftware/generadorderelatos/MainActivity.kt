@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Switch
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 
@@ -13,7 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        findViewById<SwitchCompat>(R.id.switchFantasia).setOnCheckedChangeListener { _, isChecked ->
+            if(findViewById<SwitchCompat>(R.id.switchFantasia).isChecked){
+                findViewById<SwitchCompat>(R.id.switchFantasia).text = "Fantasia"
+            }else{
+                findViewById<SwitchCompat>(R.id.switchFantasia).text = "Realismo"
+            }
+        }
 
 
         findViewById<Button>(R.id.btnGenerar).setOnClickListener {
