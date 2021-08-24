@@ -14,18 +14,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<SwitchCompat>(R.id.switchFantasia).setOnCheckedChangeListener { _, isChecked ->
-            if(findViewById<SwitchCompat>(R.id.switchFantasia).isChecked){
-                findViewById<SwitchCompat>(R.id.switchFantasia).text = "Fantasia"
+        val switchRoF = findViewById<SwitchCompat>(R.id.switchFantasia)
+
+        switchRoF.setOnCheckedChangeListener { _, isChecked ->
+            if(switchRoF.isChecked){
+                switchRoF.text = "Fantasia"
             }else{
-                findViewById<SwitchCompat>(R.id.switchFantasia).text = "Realismo"
+                switchRoF.text = "Realismo"
             }
         }
 
 
         findViewById<Button>(R.id.btnGenerar).setOnClickListener {
 
-            val RoF = findViewById<SwitchCompat>(R.id.switchFantasia).isChecked
+            val RoF = switchRoF.isChecked
             val Momento = findViewById<SwitchCompat>(R.id.switchMomento).isChecked
             val Ubicacion = findViewById<SwitchCompat>(R.id.switchUbicacion).isChecked
             val Personaje = findViewById<SwitchCompat>(R.id.switchPersonaje).isChecked
