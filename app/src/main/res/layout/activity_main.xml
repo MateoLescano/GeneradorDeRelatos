@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
         android:gravity="center"
-        android:text="Las consignas pueden tener cierto realismo tratando de mantener la verosimilitud o completa libertad de fantasear"
+        android:text="Las consignas pueden tener cierto realismo tratando de mantener la verosimilitud (pero igual ser ficticias) o completa libertad de fantasear"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/switchFantasia"
