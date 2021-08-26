@@ -2,6 +2,7 @@ package com.citesoftware.generadorderelatos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View.GONE
 import android.widget.TextView
 import kotlin.random.Random
@@ -50,11 +51,42 @@ class RelatoActivity : AppCompatActivity() {
 
     fun generarMomento(): String {
 
-        val momentosTodos = listOf("a", "b", "c", "d")
+        if(intent.getBooleanExtra("Momento", false)) {
 
-        val randint = Random.nextInt(momentosTodos.size)
 
-        return momentosTodos[randint]
+            val momentosPrehistoria = listOf("1","3","5")
+            val momentosModernidad = listOf("2","4","6")
+            val momentosContemporanea = listOf("01","02","03")
+            val momentosFuturismo = listOf("001","002","003")
+
+            val randint1 = Random.nextInt(1,5)
+            Log.d("AAA",randint1.toString())
+
+            val momentos: MutableList<String> = ArrayList()
+
+            when(randint1){
+
+                1 -> momentos.addAll(momentosPrehistoria)
+
+                2 -> momentos.addAll(momentosModernidad)
+
+                3 -> momentos.addAll(momentosContemporanea)
+
+                4 -> momentos.addAll(momentosFuturismo)
+            }
+
+
+            val randint2 = Random.nextInt(momentos.size)
+
+            return momentos[randint2]
+        }else{
+
+            val momentosTodos = listOf("a", "b", "c", "d")
+
+            val randint = Random.nextInt(momentosTodos.size)
+
+            return momentosTodos[randint]
+        }
     }
 
 }

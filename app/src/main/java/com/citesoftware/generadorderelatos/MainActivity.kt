@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RelatoActivity::class.java)
 
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-//            intent.putExtra("RoF", RoF)
+            intent.putExtra("RoF", RoF)
             intent.putExtra("Momento", Momento)
             intent.putExtra("Ubicacion", Ubicacion)
             intent.putExtra("Personaje", Personaje)
