@@ -47,6 +47,10 @@ class RelatoActivity : AppCompatActivity() {
 //        }else{
 //            findViewById<TextView>(R.id.tvDetalleGenerado).visibility = GONE
 //        }
+
+        val actionbar = supportActionBar
+        actionbar!!.title = "Tu relato"
+        actionbar.setDisplayHomeAsUpEnabled(true)
     }
 
     fun generarMomento(): String {
@@ -93,6 +97,11 @@ class RelatoActivity : AppCompatActivity() {
 
         return lista[randint]
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 }
