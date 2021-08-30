@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             val Momento = findViewById<SwitchCompat>(R.id.switchMomento).isChecked
             val Ubicacion = findViewById<SwitchCompat>(R.id.switchUbicacion).isChecked
             val Personaje = findViewById<SwitchCompat>(R.id.switchPersonaje).isChecked
-            val Accion = findViewById<SwitchCompat>(R.id.switchAccion).isChecked
+            val Evento = findViewById<SwitchCompat>(R.id.switchAccion).isChecked
             val Objeto = findViewById<SwitchCompat>(R.id.switchObjeto).isChecked
 //            val Detalle = findViewById<SwitchCompat>(R.id.switchDetalle).isChecked
 
@@ -44,11 +44,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Momento", Momento)
             intent.putExtra("Ubicacion", Ubicacion)
             intent.putExtra("Personaje", Personaje)
-            intent.putExtra("Accion", Accion)
+            intent.putExtra("Evento", Evento)
             intent.putExtra("Objeto", Objeto)
 //            intent.putExtra("Detalle", Detalle)
 
-            if(Momento || Ubicacion || Personaje || Accion || Objeto ){
+            if(Momento || Ubicacion || Personaje || Evento || Objeto ){
                 this.startActivity(intent)
             }else{
                 Toast.makeText(this,"Por favor, elija al menos una consigna",Toast.LENGTH_LONG).show()

@@ -94,6 +94,8 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAccionGenerado" />
 
     <TextView
+        android:visibility="gone"
+
         android:id="@+id/tvDetalleGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
