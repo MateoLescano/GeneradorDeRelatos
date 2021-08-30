@@ -8,19 +8,6 @@
     android:padding="5dp"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvTitulo"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:fontFamily="@font/milmedium"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Bienvenido/a: Elegí las consignas de tu relato"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="20sp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/tvFantasia"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/tvHome"
@@ -28,14 +15,28 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
         android:gravity="center"
-        android:text="@string/tvHome"
+        android:text="Hay dos tipos de texto, realista y fantastico. Uno es random el otro es más consistente. Querés astronautas en la edad media o no?"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/switchMomento"
+        app:layout_constraintBottom_toTopOf="@+id/switchFantasia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchFantasia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/millight"
+        android:text="Fantasia"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchMomento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchMomento"
@@ -50,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/switchUbicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
+        app:layout_constraintTop_toBottomOf="@+id/switchFantasia" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchUbicacion"
@@ -103,19 +104,18 @@
         android:layout_height="wrap_content"
         android:checked="true"
         android:fontFamily="@font/milmedium"
+        android:gravity="center"
         android:text="Objeto: elemento que, de alguna manera, forma parte de la trama"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchDetalle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchAccion" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:visibility="gone"
-
         android:id="@+id/switchDetalle"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
@@ -123,6 +123,7 @@
         android:text="Detalle: Una condición que debe aparecer durante el relato (o en como está escrito), un comodín de libre interpretación que creas que puede hacer la trama más interesante"
         android:textColor="@color/black"
         android:textSize="14sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
