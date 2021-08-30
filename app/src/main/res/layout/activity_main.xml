@@ -8,76 +8,60 @@
     android:padding="5dp"
     tools:context=".MainActivity">
 
+<!--    <TextView-->
+<!--        android:id="@+id/tvTitulo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/milmedium"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Bienvenido/a: Elegí las consignas de tu relato"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/tvFantasia"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
     <TextView
         android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:text="Bienvenide! Elegí las consignas de tu relato"
-        android:textColor="@color/black"
-        android:textSize="20sp"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/tvFantasia"
+        android:text="@string/tvHome"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchMomento"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvFantasia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/milmedium"
-        android:gravity="center"
-        android:text="Las consignas pueden tener cierto realismo tratando de mantener la verosimilitud (pero igual ser ficticias) o completa libertad de fantasear"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/switchFantasia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchFantasia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/millight"
-        android:text="Realismo"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/switchMomento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFantasia" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchMomento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
+        android:gravity="center"
         android:text="Momento histórico: un espacio temporal, real o ficticio, donde transcurre el relato"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchUbicacion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchFantasia" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHome" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchUbicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:text="Ubicación: un espacio físco, real o ficticio"
+        android:gravity="center"
+        android:text="Ubicación: un espacio físco, como un país, región o lugar"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchMomento" />
 
@@ -86,13 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:text="Personaje: Puede ser real, ficticio o simplemente una característica del mismo"
+        android:gravity="center"
+        android:text="Personaje: Una caracteristica de un personaje. Puede ser secundario o el protagonista"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchAccion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchUbicacion" />
 
@@ -101,13 +84,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:text="Acción: un cambio que forma parte de los acontecimientos de la trama"
+        android:gravity="center"
+        android:text="Acción: Un evento o cambio que forma parte de los acontecimientos de la trama"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchObjeto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchPersonaje" />
 
@@ -116,27 +98,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:text="Objeto: elemento que forma parte de la trama"
+        android:text="Objeto: elemento que, de alguna manera, forma parte de la trama"
         android:textColor="@color/black"
         android:textSize="14sp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/switchDetalle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchAccion" />
 
     <androidx.appcompat.widget.SwitchCompat
+        android:visibility="gone"
+
         android:id="@+id/switchDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
+        android:gravity="center"
         android:text="Detalle: Una condición que debe aparecer durante el relato (o en como está escrito), un comodín de libre interpretación que creas que puede hacer la trama más interesante"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchObjeto" />
 

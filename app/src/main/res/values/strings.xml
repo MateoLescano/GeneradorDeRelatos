@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">GeneradorDeRelatos</string>
+    <string name="app_name">Generador De Relatos</string>
+    <string name="tvHome">El desafío es escribir un relato usando las consignas generadas. Las consignas se generan de forma aleatoría, por lo que pueden no tener
+        sentido entre si; podés tomarlas literalmente, o adaptarlas para que tengan sentido. La importancia que le des a cada consigna es completamente tu decisión.</string>
 </resources>
