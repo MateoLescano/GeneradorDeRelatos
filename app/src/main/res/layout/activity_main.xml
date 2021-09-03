@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
         android:gravity="center"
-        android:text="Hay dos tipos de texto, realista y fantastico. Uno es random el otro es más consistente. Querés astronautas en la edad media o no?"
+        android:text="Las consignas se pueden generar de forma fantasiosa y combinarse de forma aleatoria, o pueden ser más realistas y mantener cierta consistencia temporal"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/switchFantasia"
