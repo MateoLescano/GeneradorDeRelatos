@@ -3,20 +3,20 @@
     <string name="app_name">Story Generator</string>
     <string name="tvHome">The challenge is to write a story with the generated prompts.\n\n The prompts are generated randomly, and thus may conflict; whether you take them literally or adapt them to make it make sense is up to you.
         \n\nThe relevance of each prompt and how much you use it in the story is up to you.</string>
-    <string name="sinConsigna">Por favor, elija al menos una consigna</string>
-    <string name="Realismo">Realismo</string>
-    <string name="Fantasia">Fantasia</string>
-    <string name="Momento"><b>Momento Historico:</b></string>
-    <string name="Ubicacion">Ubicación: </string>
-    <string name="Personaje">Personaje: </string>
-    <string name="Evento">Evento: </string>
-    <string name="Objeto">Objeto: </string>
-    <string name="TuRelato">Tu relato</string>
+    <string name="sinConsigna">Please, choose at least one prompt</string>
+    <string name="Realismo">Realism</string>
+    <string name="Fantasia">Fantasy</string>
+    <string name="Momento">Historic Setting:</string>
+    <string name="Ubicacion">Location: </string>
+    <string name="Personaje">Character: </string>
+    <string name="Evento">Event: </string>
+    <string name="Objeto">Object: </string>
+    <string name="TuRelato">Your Story</string>
     <string name="InstruccionesHome">Las consignas se pueden generar de forma fantasiosa y combinarse de forma aleatoria, o pueden ser más realistas y mantener cierta consistencia temporal</string>
-    <string name="MomentoHome">Momento histórico: un espacio temporal, real o ficticio, donde transcurre el relato</string>
-    <string name="UbicacionHome">Ubicación: un espacio físco, como un país, región o lugar</string>
-    <string name="PersonajeHome">Personaje: Una caracteristica de un personaje. Puede ser secundario o el protagonista</string>
-    <string name="EventoHome">Evento: Una acción o acontecimiento que forma parte de la trama</string>
-    <string name="ObjetoHome">Objeto: elemento que, de alguna manera, forma parte de la trama</string>
-    <string name="generar">Generar</string>
+    <string name="MomentoHome">Historic Setting: the timeline in which the story is set</string>
+    <string name="UbicacionHome">Location: a physical space, like a country, region or building</string>
+    <string name="PersonajeHome">Character: A trait of a character of the story, who may or may not be the protagonist</string>
+    <string name="EventoHome">Event: An action or incident that\'s part of the plot</string>
+    <string name="ObjetoHome">Objet: a physical object that somehow appears in the story</string>
+    <string name="generar">Generate</string>
 </resources>
