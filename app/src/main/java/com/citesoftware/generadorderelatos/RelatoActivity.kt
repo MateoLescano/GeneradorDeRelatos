@@ -1,13 +1,16 @@
 package com.citesoftware.generadorderelatos
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.util.Log
 import android.view.View.GONE
 import android.widget.TextView
 import kotlin.random.Random
 
 class RelatoActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_relato)
@@ -15,31 +18,37 @@ class RelatoActivity : AppCompatActivity() {
         val tiempo = Random.nextInt(1,4)
 
         if(intent.getBooleanExtra("Momento", false)){
-            findViewById<TextView>(R.id.tvMomentoGenerado).text = "Momento Historico: " + generarMomento(tiempo)
+
+            val text = getString(R.string.Momento)
+            findViewById<TextView>(R.id.tvMomentoGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarMomento(tiempo))
         }else{
             findViewById<TextView>(R.id.tvMomentoGenerado).visibility = GONE
         }
 
         if(intent.getBooleanExtra("Ubicacion", false)){
-            findViewById<TextView>(R.id.tvUbicacionGenerado).text = "Ubicación: " + generarUbicacion(tiempo)
+            val text = getString(R.string.Ubicacion)
+            findViewById<TextView>(R.id.tvUbicacionGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarUbicacion(tiempo))
         }else{
             findViewById<TextView>(R.id.tvUbicacionGenerado).visibility = GONE
         }
 
         if(intent.getBooleanExtra("Personaje", false)){
-            findViewById<TextView>(R.id.tvPersonajeGenerado).text = "Personaje: " + generarPersonaje(tiempo)
+            val text = getString(R.string.Personaje)
+            findViewById<TextView>(R.id.tvPersonajeGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarPersonaje(tiempo))
         }else{
             findViewById<TextView>(R.id.tvPersonajeGenerado).visibility = GONE
         }
 
         if(intent.getBooleanExtra("Evento", false)){
-            findViewById<TextView>(R.id.tvAccionGenerado).text = "Evento: " + generarEvento()
+            val text = getString(R.string.Evento)
+            findViewById<TextView>(R.id.tvAccionGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarEvento())
         }else{
             findViewById<TextView>(R.id.tvAccionGenerado).visibility = GONE
         }
 
         if(intent.getBooleanExtra("Objeto", false)){
-            findViewById<TextView>(R.id.tvObjetoGenerado).text = "Objeto: " + generarObjeto(tiempo)
+            val text = getString(R.string.Objeto)
+            findViewById<TextView>(R.id.tvObjetoGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarObjeto(tiempo))
         }else{
             findViewById<TextView>(R.id.tvObjetoGenerado).visibility = GONE
         }
@@ -53,7 +62,7 @@ class RelatoActivity : AppCompatActivity() {
 
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Tu relato"
+        actionbar!!.title = getString(R.string.TuRelato)
         actionbar.setDisplayHomeAsUpEnabled(true)
     }
 

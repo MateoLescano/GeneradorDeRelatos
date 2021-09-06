@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         switchRoF.setOnCheckedChangeListener { _, isChecked ->
             if(switchRoF.isChecked){
-                switchRoF.text = "Realismo"
+                switchRoF.text = getString(R.string.Realismo)
             }else{
-                switchRoF.text = "Fantasia"
+                switchRoF.text = getString(R.string.Fantasia)
             }
         }
 
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             if(Momento || Ubicacion || Personaje || Evento || Objeto ){
                 this.startActivity(intent)
             }else{
-                Toast.makeText(this,"Por favor, elija al menos una consigna",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,getString(R.string.sinConsigna),Toast.LENGTH_LONG).show()
             }
 
 
