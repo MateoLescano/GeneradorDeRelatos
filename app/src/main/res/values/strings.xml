@@ -23,7 +23,6 @@
     <string name="momento2">Antiguo Egipto</string>
     <string name="momento3">Construcción de las pirámides de Giza</string>
     <string name="momento4">Antigua Grecia</string>
-    <string name="momento5">Construcción del partenón</string>
     <string name="momento6">Imperio Romano</string>
     <string name="momento7">Imperio Maya</string>
     <string name="momento8">Juegos olímpicos originales</string>
@@ -31,7 +30,6 @@
     <string name="momento10">Juicio a Sócrates</string>
     <string name="momento11">Imperio Otomano</string>
     <string name="momento12">Conquista de América</string>
-    <string name="momento13">Caída del imperio bizantino</string>
     <string name="momento14">Guerra de los 100 años</string>
     <string name="momento15">Feudalismo</string>
     <string name="momento16">La peste negra</string>
@@ -39,11 +37,11 @@
     <string name="momento18">Declaración de la independencia Estadounidense</string>
     <string name="momento19">La revolución de Haití</string>
     <string name="momento20">La época de construcción de templos budistas en Asia</string>
-    <string name="momento21">La revolución de Haití</string>
+    <string name="momento21">Invensión de la primera PC</string>
     <string name="momento22">Dictadura Chilena en 1970</string>
     <string name="momento23">Dictadura Argentina en 1976</string>
     <string name="momento24">Crisis Argentina del 2001</string>
-    <string name="momento25">Revolución Rusa</string>
+    <string name="momento25">Revolución de Octubre</string>
     <string name="momento26">Revolución Cubana</string>
     <string name="momento27">Revolución de los Claveles</string>
     <string name="momento28">Epoca del cine mudo</string>
