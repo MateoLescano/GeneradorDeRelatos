@@ -94,18 +94,26 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAccionGenerado" />
 
     <TextView
-        android:visibility="gone"
-
         android:id="@+id/tvDetalleGenerado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalle"
+        android:text="¿Querés compartir tu relato, sugerir una consigna o reportar un problema?"
         android:gravity="center"
-        android:fontFamily="@font/millight"
+        android:fontFamily="@font/milmedium"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvObjetoGenerado" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuestras Redes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetalleGenerado"
+        app:layout_constraintStart_toStartOf="@+id/tvDetalleGenerado"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleGenerado" />
 </androidx.constraintlayout.widget.ConstraintLayout>
