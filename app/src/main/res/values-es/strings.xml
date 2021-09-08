@@ -66,7 +66,7 @@
     <string name="momento47">Invención del televisor</string>
     <string name="momento48">Estreno de \'El padrino\'</string>
     <string name="momento49">Estreno de \'Star Wars\'</string>
-    <string name="momento50">Construcción del Teatro Colón</string>
+    <string name="momento50">Fundación del fuerte de Buenos Aires</string>
     <string name="momento51">Un universo donde se fuma marihuana para estar sobrio</string>
     <string name="momento52">La mañana que Bob Marley escribió No Woman No Cry</string>
     <string name="momento53">Tercera guerra mundial</string>
@@ -89,7 +89,7 @@
     <string name="ubicacion7">Un calabozo</string>
     <string name="ubicacion8">Un café</string>
     <string name="ubicacion9">Un vagón de tren abandonado</string>
-    <string name="ubicacion10">El andén 2 de la estación de Retiro</string>
+    <string name="ubicacion10">El andén 2 de la estación de Retiro, Buenos Aires</string>
     <string name="ubicacion11">Una casa alejada de todo</string>
     <string name="ubicacion12">Un búnker</string>
     <string name="ubicacion13">Praga, República Checa</string>
@@ -110,7 +110,6 @@
     <string name="ubicacion28">Lisboa, Portugal</string>
     <string name="ubicacion29">una taberna</string>
     <string name="ubicacion30">la mitad de la carretera</string>
-    <string name="ubicacion31">Praga</string>
     <string name="ubicacion32">Roma</string>
     <string name="ubicacion33">Damasco</string>
     <string name="ubicacion34">Atenas, Grecia</string>
