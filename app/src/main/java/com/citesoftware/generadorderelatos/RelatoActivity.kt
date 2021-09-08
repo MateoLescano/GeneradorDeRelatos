@@ -41,7 +41,7 @@ class RelatoActivity : AppCompatActivity() {
 
         if(intent.getBooleanExtra("Evento", false)){
             val text = getString(R.string.Evento)
-            findViewById<TextView>(R.id.tvAccionGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarEvento())
+            findViewById<TextView>(R.id.tvAccionGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarEvento(tiempo))
         }else{
             findViewById<TextView>(R.id.tvAccionGenerado).visibility = GONE
         }
@@ -289,13 +289,61 @@ class RelatoActivity : AppCompatActivity() {
 
     }
 
-    fun generarEvento(): String {
+    fun generarEvento(tiempo: Int): String {
 
 
-            val lista = listOf("En el pais hay una dictadura", "Alguien consume hongos alucinogenos", "Hay una serie de despidos", "Los animales enloquecen", "Un dia deja de haber consecuencias", "Hay un reencuentro", "Alguien queda mudo/a", "La gente deja de poder dormir", "Por una apuesta casi infantil un personaje toma protagonismo", "Destronan a un rey", "Hay una pandemia", "Se concreta un pacto de sangre", "Hay un apocalipsis", "Hay un intento de suicidio", "Hay un embarazo", "Hay una votación importante", "Hay una ejecucción","Hay un cambio en un planeta de la via lactea", "Los relojes dejan de funcionar")
+        if(intent.getBooleanExtra("RoF", true)) {
+
+            var lista: List<String> = emptyList()
+
+            when(tiempo){
+
+                1 -> lista = listOf("Una persona con problemas de memoria","Un niño o niña", "Una persona con depresión", "Un viajero del tiempo", "Una persona con poderes", "Un animal", "Un ilustrador de comics", "Un teniente coronel", "Un o una adolescente", "El o la elegida", "Un par de gemelos", "Una persona con un secreto", "Un o una condenada a muerte", "Un o una prisionera",  "Un o una medica", "Un actor/actriz ", "Una o un detective",  "Un o una deportista ", "Una o un escritor ", "Una persona sin hogar", "Una persona que escapa", "Una persona desesperada", "Un o una psicopata", "Una o un asesino", "Tu personaje historico favorito ", "Tu personaje ficticio favorito")
+
+                2, 3 -> lista = listOf("Una persona con problemas de memoria","Un niño o niña", "Una persona con depresión", "Un viajero del tiempo", "Una persona con poderes", "Un animal", "Un o una adolescente", "El o la elegida", "Un o una espia", "Un astronauta", "Un par de gemelos", "Una persona con un secreto", "Un o una condenada a muerte", "Un o una prisionera", "Un o una programadora",  "Un o una medica", "Un actor/actriz ", "Una o un detective", "Un o una medica", "Un barbero", "Una o un muralista",  "Un o una deportista ", "Una o un escritor ", "Una persona sin hogar", "Una persona que escapa", "Una persona desesperada", "Un o una psicopata", "Una o un asesino", "Tu personaje historico favorito ", "Tu personaje ficticio favorito")
+
+            }
+
             val randint = Random.nextInt(lista.size)
 
             return lista[randint]
+
+        }else{
+            val lista = listOf(getString(R.string.eventos1),
+                getString(R.string.eventos2),
+                getString(R.string.eventos3),
+                getString(R.string.eventos4),
+                getString(R.string.eventos5),
+                getString(R.string.eventos6),
+                getString(R.string.eventos7),
+                getString(R.string.eventos8),
+                getString(R.string.eventos9),
+                getString(R.string.eventos10),
+                getString(R.string.eventos11),
+                getString(R.string.eventos12),
+                getString(R.string.eventos13),
+                getString(R.string.eventos14),
+                getString(R.string.eventos15),
+                getString(R.string.eventos16),
+                getString(R.string.eventos17),
+                getString(R.string.eventos18),
+                getString(R.string.eventos19),
+                getString(R.string.eventos20),
+                getString(R.string.eventos21),
+                getString(R.string.eventos22),
+                getString(R.string.eventos23),
+                getString(R.string.eventos24),
+                getString(R.string.eventos25),
+                getString(R.string.eventos26),
+                getString(R.string.eventos27),
+                getString(R.string.eventos28),
+                getString(R.string.eventos29),
+                getString(R.string.eventos30),
+                getString(R.string.eventos31))
+            val randint = Random.nextInt(lista.size)
+
+            return lista[randint]
+        }
 
 
     }
@@ -319,7 +367,39 @@ class RelatoActivity : AppCompatActivity() {
             return lista[randint]
 
         }else{
-            val lista = listOf("Una radio", "Un vaso", "Una sustancia ilícita", "Una piedra", "Un guante", "Una camara analogica", "Una dosis de veneno", "Una caja musical", "Un pañuelo", "Una caja de fosforos", "Un cafe", "Un sobre", "Una arma sin capacidad de matar", "Una pluma", "Una llave capaz de abrir cualquier puerta", "Un perfume",  "Un anillo", "Un mazo de cartas", "Un telefono", "Una harmonica", "Una bebida espirituoza", "Un reloj roto", "Unas flores", "Un té poco común", "Unos dados")
+            val lista = listOf(getString(R.string.objetos1),
+                getString(R.string.objetos2),
+                getString(R.string.objetos3),
+                getString(R.string.objetos4),
+                getString(R.string.objetos5),
+                getString(R.string.objetos6),
+                getString(R.string.objetos7),
+                getString(R.string.objetos8),
+                getString(R.string.objetos9),
+                getString(R.string.objetos10),
+                getString(R.string.objetos11),
+                getString(R.string.objetos12),
+                getString(R.string.objetos13),
+                getString(R.string.objetos14),
+                getString(R.string.objetos15),
+                getString(R.string.objetos16),
+                getString(R.string.objetos17),
+                getString(R.string.objetos18),
+                getString(R.string.objetos19),
+                getString(R.string.objetos20),
+                getString(R.string.objetos21),
+                getString(R.string.objetos22),
+                getString(R.string.objetos23),
+                getString(R.string.objetos24),
+                getString(R.string.objetos25),
+                getString(R.string.objetos26),
+                getString(R.string.objetos27),
+                getString(R.string.objetos28),
+                getString(R.string.objetos29),
+                getString(R.string.objetos30),
+                getString(R.string.objetos31),
+                getString(R.string.objetos32),
+                getString(R.string.objetos33))
             val randint = Random.nextInt(lista.size)
 
             return lista[randint]
