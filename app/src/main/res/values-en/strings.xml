@@ -12,7 +12,7 @@
     <string name="Evento">Event: </string>
     <string name="Objeto">Object: </string>
     <string name="TuRelato">Your Story</string>
-    <string name="InstruccionesHome">Las consignas se pueden generar de forma fantasiosa y combinarse de forma aleatoria, o pueden ser más realistas y mantener cierta consistencia temporal</string>
+    <string name="InstruccionesHome">Prompts can be generated rather realistically trying to keep some temporal consistency, or can be more fantastic and combine prompts from different historical times</string>
     <string name="MomentoHome">Historic Setting: the timeline in which the story is set</string>
     <string name="UbicacionHome">Location: a physical space, like a country, region or building</string>
     <string name="PersonajeHome">Character: A trait of a character of the story, who may or may not be the protagonist</string>
