@@ -50,7 +50,7 @@
     <string name="momento30">World War II</string>
     <string name="momento31">World War I</string>
     <string name="momento32">Invention of the first Smartphone</string>
-    <string name="momento33">Surge of Artificial Intelligence</string>
+    <string name="momento33">Invention of a true Artificial Intelligence</string>
     <string name="momento34">AIDS Epidemic</string>
     <string name="momento35">Fall of the Berlin Wall</string>
     <string name="momento36">2008 US financial crisis</string>
@@ -227,4 +227,5 @@
     <string name="objetos31">A collectors item</string>
     <string name="objetos32">An intimate journal</string>
     <string name="objetos33">A piece of evidence</string>
+    <string name="tvRedes">Would you like to share your story, suggest a prompt o report a bug?</string>
 </resources>

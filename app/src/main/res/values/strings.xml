@@ -18,6 +18,7 @@
     <string name="EventoHome">Evento: Una acontecimiento que forma parte de la trama o de como se cuenta la misma</string>
     <string name="ObjetoHome">Objeto: elemento que, de alguna manera, forma parte de la trama</string>
     <string name="generar">Generar</string>
+    <string name="tvRedes">¿Querés compartir tu relato, sugerir una consigna o reportar un problema?</string>
 
     <string name="momento1">Invención de la escritura</string>
     <string name="momento2">Antiguo Egipto</string>
@@ -29,7 +30,7 @@
     <string name="momento9">Erupción del Monte Vesubio</string>
     <string name="momento10">Juicio a Sócrates</string>
     <string name="momento11">Imperio Otomano</string>
-    <string name="momento12">Conquista de América</string>
+    <string name="momento12">Colonización de América</string>
     <string name="momento14">Guerra de los 100 años</string>
     <string name="momento15">Feudalismo</string>
     <string name="momento16">La peste negra</string>
@@ -49,7 +50,7 @@
     <string name="momento30">Segunda guerra mundial</string>
     <string name="momento31">Primera guerra mundial</string>
     <string name="momento32">Invención del smartphone</string>
-    <string name="momento33">Inteligencia artificial</string>
+    <string name="momento33">Creación de una verdadera inteligencia artificial</string>
     <string name="momento34">Epidemia del HIV</string>
     <string name="momento35">Caída del muro de Berlín</string>
     <string name="momento36">Crisis del 2008</string>
@@ -107,8 +108,8 @@
     <string name="ubicacion26">Ciudad del Cabo, Sudáfrica</string>
     <string name="ubicacion27">Estambul, Turquía</string>
     <string name="ubicacion28">Lisboa, Portugal</string>
-    <string name="ubicacion29">una taberna</string>
-    <string name="ubicacion30">la mitad de la carretera</string>
+    <string name="ubicacion29">Una taberna</string>
+    <string name="ubicacion30">La mitad de la carretera</string>
     <string name="ubicacion32">Roma</string>
     <string name="ubicacion33">Damasco</string>
     <string name="ubicacion34">Atenas, Grecia</string>
