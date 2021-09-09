@@ -411,10 +411,64 @@ class RelatoActivity : AppCompatActivity() {
 
             when(tiempo){
 
-                1 -> lista = listOf("Una persona con problemas de memoria","Un niño o niña", "Una persona con depresión", "Un viajero del tiempo", "Una persona con poderes", "Un animal", "Un ilustrador de comics", "Un teniente coronel", "Un o una adolescente", "El o la elegida", "Un par de gemelos", "Una persona con un secreto", "Un o una condenada a muerte", "Un o una prisionera",  "Un o una medica", "Un actor/actriz ", "Una o un detective",  "Un o una deportista ", "Una o un escritor ", "Una persona sin hogar", "Una persona que escapa", "Una persona desesperada", "Un o una psicopata", "Una o un asesino", "Tu personaje historico favorito ", "Tu personaje ficticio favorito")
-
-                2, 3 -> lista = listOf("Una persona con problemas de memoria","Un niño o niña", "Una persona con depresión", "Un viajero del tiempo", "Una persona con poderes", "Un animal", "Un o una adolescente", "El o la elegida", "Un o una espia", "Un astronauta", "Un par de gemelos", "Una persona con un secreto", "Un o una condenada a muerte", "Un o una prisionera", "Un o una programadora",  "Un o una medica", "Un actor/actriz ", "Una o un detective", "Un o una medica", "Un barbero", "Una o un muralista",  "Un o una deportista ", "Una o un escritor ", "Una persona sin hogar", "Una persona que escapa", "Una persona desesperada", "Un o una psicopata", "Una o un asesino", "Tu personaje historico favorito ", "Tu personaje ficticio favorito")
-
+                1 -> lista = listOf(getString(R.string.personajes1),
+                    getString(R.string.personajes2),
+                    getString(R.string.personajes3),
+                    getString(R.string.personajes4),
+                    getString(R.string.personajes5),
+                    getString(R.string.personajes7),
+                    getString(R.string.personajes9),
+                    getString(R.string.personajes10),
+                    getString(R.string.personajes13),
+                    getString(R.string.personajes14),
+                    getString(R.string.personajes15),
+                    getString(R.string.personajes16),
+                    getString(R.string.personajes18),
+                    getString(R.string.personajes19),
+                    getString(R.string.personajes24),
+                    getString(R.string.personajes26),
+                    getString(R.string.personajes27),
+                    getString(R.string.personajes28),
+                    getString(R.string.personajes29),
+                    getString(R.string.personajes30),
+                    getString(R.string.personajes31),
+                    getString(R.string.personajes33),
+                    getString(R.string.personajes34))
+                2, 3 -> lista = listOf(getString(R.string.personajes1),
+                    getString(R.string.personajes2),
+                    getString(R.string.personajes3),
+                    getString(R.string.personajes4),
+                    getString(R.string.personajes5),
+                    getString(R.string.personajes6),
+                    getString(R.string.personajes7),
+                    getString(R.string.personajes8),
+                    getString(R.string.personajes9),
+                    getString(R.string.personajes10),
+                    getString(R.string.personajes11),
+                    getString(R.string.personajes12),
+                    getString(R.string.personajes13),
+                    getString(R.string.personajes14),
+                    getString(R.string.personajes15),
+                    getString(R.string.personajes16),
+                    getString(R.string.personajes17),
+                    getString(R.string.personajes18),
+                    getString(R.string.personajes19),
+                    getString(R.string.personajes20),
+                    getString(R.string.personajes21),
+                    getString(R.string.personajes22),
+                    getString(R.string.personajes23),
+                    getString(R.string.personajes24),
+                    getString(R.string.personajes25),
+                    getString(R.string.personajes26),
+                    getString(R.string.personajes27),
+                    getString(R.string.personajes28),
+                    getString(R.string.personajes29),
+                    getString(R.string.personajes30),
+                    getString(R.string.personajes31),
+                    getString(R.string.personajes32),
+                    getString(R.string.personajes33),
+                    getString(R.string.personajes34),
+                    getString(R.string.personajes35))
             }
 
             val randint = Random.nextInt(lista.size)
