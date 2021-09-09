@@ -102,21 +102,49 @@
         android:text="¿Querés compartir tu relato, sugerir una consigna o reportar un problema?"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnRedes1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvObjetoGenerado" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRedes1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nuestras Redes"
-        android:textSize="14sp"
         android:fontFamily="@font/milmedium"
+        android:text="Twitter"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvDetalleGenerado"
-        app:layout_constraintStart_toStartOf="@+id/tvDetalleGenerado"
+        app:layout_constraintEnd_toStartOf="@+id/btnRedes2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetalleGenerado" />
+
+    <Button
+        android:id="@+id/btnRedes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/milmedium"
+        android:text="Instagram"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedes1"
+        app:layout_constraintEnd_toStartOf="@+id/btnRedes3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRedes1"
+        app:layout_constraintTop_toTopOf="@+id/btnRedes1" />
+
+    <Button
+        android:id="@+id/btnRedes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/milmedium"
+        android:text="TikTok"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRedes2"
+        app:layout_constraintTop_toTopOf="@+id/btnRedes2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

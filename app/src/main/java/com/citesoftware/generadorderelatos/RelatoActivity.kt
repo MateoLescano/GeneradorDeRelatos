@@ -1,13 +1,17 @@
 package com.citesoftware.generadorderelatos
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.Html
-import android.util.Log
 import android.view.View.GONE
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
+
 
 class RelatoActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -53,11 +57,47 @@ class RelatoActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvObjetoGenerado).visibility = GONE
         }
 
-//        if(intent.getBooleanExtra("Detalle", false)){
-//            findViewById<TextView>(R.id.tvDetalleGenerado).text = "Si pa"
-//        }else{
-//            findViewById<TextView>(R.id.tvDetalleGenerado).visibility = GONE
-//        }
+
+        findViewById<Button>(R.id.btnRedes1).setOnClickListener{
+            try {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("twitter://user?screen_name=citesoftware")
+                    )
+                )
+            } catch (e: Exception) {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://twitter.com/#!/citesoftware")
+                    )
+                )
+            }
+        }
+
+        findViewById<Button>(R.id.btnRedes2).setOnClickListener{
+
+            val uri = Uri.parse("http://instagram.com/_u/citesoftware")
+            val likeIng = Intent(Intent.ACTION_VIEW, uri)
+
+            likeIng.setPackage("com.instagram.android")
+
+            try {
+                startActivity(likeIng)
+            } catch (e: ActivityNotFoundException) {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://www.instagram.com/citesoftware/"))
+                )
+            }
+
+        }
+
+        findViewById<Button>(R.id.btnRedes3).setOnClickListener{
+
+        }
 
 
 
