@@ -97,6 +97,21 @@ class RelatoActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnRedes3).setOnClickListener{
 
+            val uri = Uri.parse("http://vm.tiktok.com/citesoftware")
+            val likeIng = Intent(Intent.ACTION_VIEW, uri)
+
+            likeIng.setPackage("com.zhiliaoapp.musically")
+
+            try {
+                startActivity(likeIng)
+            } catch (e: ActivityNotFoundException) {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://www.tiktok.com/@citesoftware?lang=es"))
+                )
+            }
+
         }
 
 
