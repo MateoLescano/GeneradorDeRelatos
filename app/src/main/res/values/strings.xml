@@ -116,6 +116,7 @@
     <string name="ubicacion53">Barranquilla, Colombia</string>
     <string name="ubicacion54">Asunción, Paraguay</string>
     <string name="ubicacion55">Visakhapatnam, India</string>
+    <string name="ubicacion56">Petare, Venezuela</string>
 
 
     <string name="ubicacion2">Una iglesia, templo o mezquita</string>
@@ -148,6 +149,7 @@
     <string name="locacion8">Un club deportivo</string>
     <string name="locacion9">Una estancia</string>
     <string name="locacion10">Un faro</string>
+    <string name="locacion11">Un castillo</string>
 
     <string name="personajes1">Un niño o niña</string>
     <string name="personajes2">Una persona con depresión</string>
