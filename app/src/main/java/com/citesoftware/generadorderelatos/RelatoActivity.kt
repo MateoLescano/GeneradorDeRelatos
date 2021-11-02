@@ -518,7 +518,17 @@ class RelatoActivity : AppCompatActivity() {
                 getString(R.string.ubicacion30),
                 getString(R.string.ubicacion37),
                 getString(R.string.ubicacion40),
-                getString(R.string.ubicacion45)
+                getString(R.string.ubicacion46),
+                getString(R.string.ubicacion47),
+                getString(R.string.ubicacion48),
+                getString(R.string.ubicacion49),
+                getString(R.string.ubicacion50),
+                getString(R.string.ubicacion51),
+                getString(R.string.ubicacion52),
+                getString(R.string.ubicacion53),
+                getString(R.string.ubicacion54),
+                getString(R.string.ubicacion55)
+
             )
             val randint = Random.nextInt(lista.size)
 

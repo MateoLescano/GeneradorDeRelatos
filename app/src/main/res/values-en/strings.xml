@@ -230,4 +230,27 @@
     <string name="tvRedes">Would you like to share your story, suggest a prompt o report a bug?</string>
     <string name="locacionHome">Scene: A place or scenario that appears during the story</string>
     <string name="locacion">Scene:</string>
+    <string name="locacion1">An old mansion</string>
+    <string name="locacion2">A bridge</string>
+    <string name="locacion3">A lab</string>
+    <string name="locacion4">A beach club</string>
+    <string name="locacion5">A cementery</string>
+    <string name="locacion6">A theater</string>
+    <string name="locacion7">A low-budget cinema</string>
+    <string name="locacion8">A sports club</string>
+    <string name="locacion9">A house in a farm</string>
+    <string name="locacion10">A lighthouse</string>
+    <string name="personajes36">A volunteer</string>
+    <string name="personajes37">A teacher</string>
+    <string name="personajes38">A professor</string>
+    <string name="ubicacion46">Barcelona</string>
+    <string name="ubicacion47">Cuba</string>
+    <string name="ubicacion48">Moscow</string>
+    <string name="ubicacion49">Buddhist Temple in Thailand</string>
+    <string name="ubicacion50">Lagos, Nigeria</string>
+    <string name="ubicacion51">San Miguel de Allende, Mexico</string>
+    <string name="ubicacion52">Bogotá, Colombia</string>
+    <string name="ubicacion53">Barranquilla, Colombia</string>
+    <string name="ubicacion54">Asunción, Paraguay</string>
+    <string name="ubicacion55">Visakhapatnam, India</string>
 </resources>

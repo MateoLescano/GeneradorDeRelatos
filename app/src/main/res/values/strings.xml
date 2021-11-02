@@ -19,6 +19,8 @@
     <string name="ObjetoHome">Objeto: Elemento que, de alguna manera, forma parte de la trama</string>
     <string name="generar">Generar</string>
     <string name="tvRedes">¿Querés compartir tu relato, sugerir una consigna o reportar un problema?</string>
+    <string name="locacionHome">Locación: Un lugar o escenario que aparece en el relato</string>
+    <string name="locacion">Locación:</string>
 
     <string name="momento1">Invención de la escritura</string>
     <string name="momento2">Antiguo Egipto</string>
@@ -104,6 +106,16 @@
     <string name="ubicacion42">El Amazonas</string>
     <string name="ubicacion43">Bahía de Ha-Long</string>
     <string name="ubicacion44">Isla Jeju</string>
+    <string name="ubicacion46">Barcelona</string>
+    <string name="ubicacion47">Cuba</string>
+    <string name="ubicacion48">Moscú</string>
+    <string name="ubicacion49">Templos budistas en Tailandia</string>
+    <string name="ubicacion50">Lagos, Nigeria</string>
+    <string name="ubicacion51">San Miguel de Allende, México</string>
+    <string name="ubicacion52">Bogotá, Colombia</string>
+    <string name="ubicacion53">Barranquilla, Colombia</string>
+    <string name="ubicacion54">Asunción, Paraguay</string>
+    <string name="ubicacion55">Visakhapatnam, India</string>
 
 
     <string name="ubicacion2">Una iglesia, templo o mezquita</string>
@@ -126,7 +138,16 @@
     <string name="ubicacion37">Un restaurant de comida peruana</string>
     <string name="ubicacion40">Una universidad</string>
     <string name="ubicacion45">Una estación de radio</string>
-
+    <string name="locacion1">Una casona antigua</string>
+    <string name="locacion2">Un puente</string>
+    <string name="locacion3">Un laboratorio</string>
+    <string name="locacion4">Un balneario</string>
+    <string name="locacion5">Un cemeneterio</string>
+    <string name="locacion6">Un teatro</string>
+    <string name="locacion7">Un cine poco concurrido</string>
+    <string name="locacion8">Un club deportivo</string>
+    <string name="locacion9">Una estancia</string>
+    <string name="locacion10">Un faro</string>
 
     <string name="personajes1">Un niño o niña</string>
     <string name="personajes2">Una persona con depresión</string>
@@ -163,6 +184,10 @@
     <string name="personajes33">Una persona con problemas de memoria</string>
     <string name="personajes34">Una o un esclavo</string>
     <string name="personajes35">Miembro del Partido Comunista Chino</string>
+    <string name="personajes36">Un o una voluntaria</string>
+    <string name="personajes37">Una o un maestro</string>
+    <string name="personajes38">Un o una profesora</string>
+
 
     <string name="eventos1">En el pais hay una dictadura</string>
     <string name="eventos2">Alguien consume hongos alucinogenos</string>
@@ -229,7 +254,6 @@
     <string name="objetos31">Un objeto de coleccionista</string>
     <string name="objetos32">Un diario intimo</string>
     <string name="objetos33">Una forma de evidencia</string>
-    <string name="locacionHome">Locación: Un lugar o escenario que aparece en el relato</string>
-    <string name="locacion">Locación:</string>
+
 
 </resources>
