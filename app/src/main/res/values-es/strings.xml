@@ -228,4 +228,5 @@
     <string name="objetos32">Un diario intimo</string>
     <string name="objetos33">Una forma de evidencia</string>
     <string name="tvRedes">¿Querés compartir tu relato, sugerir una consigna o reportar un problema?</string>
+    <string name="locacionHome">Locación: Un lugar o esceneario que aparece en el relato</string>
 </resources>

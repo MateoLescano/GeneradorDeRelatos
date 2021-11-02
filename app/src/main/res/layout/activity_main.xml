@@ -63,7 +63,7 @@
         android:text="@string/UbicacionHome"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/switchPersonaje"
+        app:layout_constraintBottom_toTopOf="@+id/switchDetalle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchMomento" />
@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toTopOf="@+id/switchAccion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchUbicacion" />
+        app:layout_constraintTop_toBottomOf="@+id/switchDetalle" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchAccion"
@@ -108,7 +108,7 @@
         android:text="@string/ObjetoHome"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/switchDetalle"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchAccion" />
@@ -120,26 +120,26 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
         android:gravity="center"
-        android:text="Detalle: Una condición que debe aparecer durante el relato (o en como está escrito), un comodín de libre interpretación que creas que puede hacer la trama más interesante"
+        android:checked="true"
+        android:text="@string/locacionHome"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
+        app:layout_constraintBottom_toTopOf="@+id/switchPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchObjeto" />
+        app:layout_constraintTop_toBottomOf="@+id/switchUbicacion" />
 
     <Button
         android:id="@+id/btnGenerar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milmedium"
-        android:textSize="15sp"
         android:text="@string/generar"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/switchObjeto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

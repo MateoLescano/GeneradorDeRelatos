@@ -36,6 +36,13 @@ class RelatoActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tvUbicacionGenerado).visibility = GONE
         }
 
+        if(intent.getBooleanExtra("Locacion", false)){
+            val text = getString(R.string.locacion)
+            findViewById<TextView>(R.id.tvLocacionGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarLocacion(tiempo))
+        }else{
+            findViewById<TextView>(R.id.tvLocacionGenerado).visibility = GONE
+        }
+
         if(intent.getBooleanExtra("Personaje", false)){
             val text = getString(R.string.Personaje)
             findViewById<TextView>(R.id.tvPersonajeGenerado).text = Html.fromHtml("<b>$text</b>" + " " + generarPersonaje(tiempo))
@@ -394,6 +401,123 @@ class RelatoActivity : AppCompatActivity() {
                 getString(R.string.ubicacion42),
                 getString(R.string.ubicacion43),
                 getString(R.string.ubicacion44),
+                getString(R.string.ubicacion45)
+            )
+            val randint = Random.nextInt(lista.size)
+
+            return lista[randint]
+        }
+
+    }
+
+
+    fun generarLocacion(tiempo: Int): String {
+
+        if(intent.getBooleanExtra("RoF", true)) {
+
+            var lista: List<String> = emptyList()
+
+            when(tiempo){
+
+                1 -> lista = listOf(
+                    getString(R.string.ubicacion1),
+                    getString(R.string.ubicacion2),
+                    getString(R.string.ubicacion4),
+                    getString(R.string.ubicacion7),
+                    getString(R.string.ubicacion11),
+                    getString(R.string.ubicacion13),
+                    getString(R.string.ubicacion14),
+                    getString(R.string.ubicacion17),
+                    getString(R.string.ubicacion19),
+                    getString(R.string.ubicacion21),
+                    getString(R.string.ubicacion22),
+                    getString(R.string.ubicacion27),
+                    getString(R.string.ubicacion28),
+                    getString(R.string.ubicacion29),
+                    getString(R.string.ubicacion30),
+                    getString(R.string.ubicacion32),
+                    getString(R.string.ubicacion33),
+                    getString(R.string.ubicacion34),
+                    getString(R.string.ubicacion35),
+                    getString(R.string.ubicacion36),
+                    getString(R.string.ubicacion38),
+                    getString(R.string.ubicacion40),
+                    getString(R.string.ubicacion41),
+                    getString(R.string.ubicacion42),
+                    getString(R.string.ubicacion43),
+                    getString(R.string.ubicacion44)
+                )
+                2, 3 -> lista = listOf(
+                    getString(R.string.ubicacion1),
+                    getString(R.string.ubicacion2),
+                    getString(R.string.ubicacion4),
+                    getString(R.string.ubicacion7),
+                    getString(R.string.ubicacion11),
+                    getString(R.string.ubicacion13),
+                    getString(R.string.ubicacion14),
+                    getString(R.string.ubicacion17),
+                    getString(R.string.ubicacion19),
+                    getString(R.string.ubicacion21),
+                    getString(R.string.ubicacion22),
+                    getString(R.string.ubicacion27),
+                    getString(R.string.ubicacion28),
+                    getString(R.string.ubicacion29),
+                    getString(R.string.ubicacion30),
+                    getString(R.string.ubicacion32),
+                    getString(R.string.ubicacion33),
+                    getString(R.string.ubicacion34),
+                    getString(R.string.ubicacion35),
+                    getString(R.string.ubicacion36),
+                    getString(R.string.ubicacion38),
+                    getString(R.string.ubicacion40),
+                    getString(R.string.ubicacion41),
+                    getString(R.string.ubicacion42),
+                    getString(R.string.ubicacion43),
+                    getString(R.string.ubicacion44),
+                    getString(R.string.ubicacion3),
+                    getString(R.string.ubicacion5),
+                    getString(R.string.ubicacion6),
+                    getString(R.string.ubicacion8),
+                    getString(R.string.ubicacion9),
+                    getString(R.string.ubicacion10),
+                    getString(R.string.ubicacion12),
+                    getString(R.string.ubicacion15),
+                    getString(R.string.ubicacion16),
+                    getString(R.string.ubicacion18),
+                    getString(R.string.ubicacion20),
+                    getString(R.string.ubicacion23),
+                    getString(R.string.ubicacion24),
+                    getString(R.string.ubicacion26),
+                    getString(R.string.ubicacion37),
+                    getString(R.string.ubicacion39),
+                    getString(R.string.ubicacion45))
+            }
+
+            val randint = Random.nextInt(lista.size)
+
+            return lista[randint]
+
+        }else{
+            val lista = listOf(
+                getString(R.string.ubicacion2),
+                getString(R.string.ubicacion4),
+                getString(R.string.ubicacion5),
+                getString(R.string.ubicacion6),
+                getString(R.string.ubicacion7),
+                getString(R.string.ubicacion8),
+                getString(R.string.ubicacion9),
+                getString(R.string.ubicacion11),
+                getString(R.string.ubicacion12),
+                getString(R.string.ubicacion14),
+                getString(R.string.ubicacion19),
+                getString(R.string.ubicacion20),
+                getString(R.string.ubicacion21),
+                getString(R.string.ubicacion23),
+                getString(R.string.ubicacion24),
+                getString(R.string.ubicacion29),
+                getString(R.string.ubicacion30),
+                getString(R.string.ubicacion37),
+                getString(R.string.ubicacion40),
                 getString(R.string.ubicacion45)
             )
             val randint = Random.nextInt(lista.size)

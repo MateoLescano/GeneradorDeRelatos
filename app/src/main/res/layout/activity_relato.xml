@@ -46,10 +46,24 @@
         android:text="Ubicacion"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvPersonajeGenerado"
+        app:layout_constraintBottom_toTopOf="@+id/tvLocacionGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMomentoGenerado" />
+
+    <TextView
+        android:id="@+id/tvLocacionGenerado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/millight"
+        android:gravity="center"
+        android:text="Locacion"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonajeGenerado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUbicacionGenerado" />
 
     <TextView
         android:id="@+id/tvPersonajeGenerado"
@@ -63,7 +77,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tvAccionGenerado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUbicacionGenerado" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLocacionGenerado" />
 
     <TextView
         android:id="@+id/tvAccionGenerado"

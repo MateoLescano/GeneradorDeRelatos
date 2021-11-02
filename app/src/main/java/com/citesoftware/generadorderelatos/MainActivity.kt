@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
             val RoF = switchRoF.isChecked
             val Momento = findViewById<SwitchCompat>(R.id.switchMomento).isChecked
             val Ubicacion = findViewById<SwitchCompat>(R.id.switchUbicacion).isChecked
+            val Locacion = findViewById<SwitchCompat>(R.id.switchDetalle).isChecked
             val Personaje = findViewById<SwitchCompat>(R.id.switchPersonaje).isChecked
             val Evento = findViewById<SwitchCompat>(R.id.switchAccion).isChecked
             val Objeto = findViewById<SwitchCompat>(R.id.switchObjeto).isChecked
-//            val Detalle = findViewById<SwitchCompat>(R.id.switchDetalle).isChecked
 
 
 
@@ -43,12 +43,13 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("RoF", RoF)
             intent.putExtra("Momento", Momento)
             intent.putExtra("Ubicacion", Ubicacion)
+            intent.putExtra("Locacion", Locacion)
             intent.putExtra("Personaje", Personaje)
             intent.putExtra("Evento", Evento)
             intent.putExtra("Objeto", Objeto)
-//            intent.putExtra("Detalle", Detalle)
 
-            if(Momento || Ubicacion || Personaje || Evento || Objeto ){
+
+            if(Momento || Ubicacion || Locacion || Personaje || Evento || Objeto ){
                 this.startActivity(intent)
             }else{
                 Toast.makeText(this,getString(R.string.sinConsigna),Toast.LENGTH_LONG).show()
