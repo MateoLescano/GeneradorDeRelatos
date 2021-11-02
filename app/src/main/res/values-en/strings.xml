@@ -228,4 +228,6 @@
     <string name="objetos32">An intimate journal</string>
     <string name="objetos33">A piece of evidence</string>
     <string name="tvRedes">Would you like to share your story, suggest a prompt o report a bug?</string>
+    <string name="locacionHome">Location: A place or scenario that appears during the story</string>
+    <string name="locacion">Location:</string>
 </resources>
